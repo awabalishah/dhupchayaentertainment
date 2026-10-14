@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhupchaya Entertainment — Bangla Natok, Films & Music</title>
+  <meta name="description" content="Dhupchaya Entertainment produces and releases Bangla natoks, YouTube films, short films and original music for 1.5M+ subscribers.">
+  <meta property="og:title" content="Dhupchaya Entertainment">
+  <meta property="og:description" content="Stories of light and shadow. Bangla natoks, films and music.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta name="theme-color" content="#07070c">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Dhupchaya Entertainment home">
+      <img src="assets/logo.png" alt="" width="36" height="38">
+      <span class="brand-text"><b>Dhupchaya</b><small>Entertainment</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#originals">Originals</a>
+      <a href="#music">Music</a>
+      <a href="#about">About</a>
+      <a href="#business">Partner With Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm btn-yt" href="https://www.youtube.com/c/DhupchayaEntertainment?sub_confirmation=1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+      Subscribe
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-roledescription="carousel">
+      <div class="hero-slides" id="heroSlides"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow"><span class="dot"></span><span id="heroTag">Now streaming</span></p>
+        <h1 class="hero-title" id="heroTitle">Meghbalika</h1>
+        <p class="hero-bn bn" id="heroBn">মেঘবালিকা</p>
+        <p class="hero-meta" id="heroMeta"></p>
+        <p class="hero-log" id="heroLog"></p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" id="heroPlay">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Watch now
+          </button>
+          <button class="btn btn-ghost" id="heroTrailer">Trailer</button>
+        </div>
+      </div>
+      <div class="hero-dots wrap" id="heroDots" role="tablist"></div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats wrap">
+      <div class="stat"><b data-count="1.5" data-suffix="M+">0</b><span>YouTube subscribers</span></div>
+      <div class="stat"><b data-count="116" data-suffix="M+">0</b><span>Views on our last 13 originals</span></div>
+      <div class="stat"><b data-count="31" data-suffix="M">0</b><span>Views on <i>Meghbalika</i> alone</span></div>
+      <div class="stat"><b data-count="9.2" data-suffix="M">0</b><span>Plays on our biggest song</span></div>
+    </section>
+
+    <!-- ============ ORIGINALS ============ -->
+    <section class="section wrap" id="originals">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Our Originals</p>
+          <h2>Natoks &amp; films <em>Bangladesh</em> is watching</h2>
+        </div>
+        <div class="filters" role="tablist" id="filters">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="eid">Eid Specials</button>
+          <button class="chip" data-filter="2026">2026</button>
+          <button class="chip" data-filter="film">Films</button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="center"><a class="btn btn-ghost" href="https://www.youtube.com/c/DhupchayaEntertainment/videos" target="_blank" rel="noopener">See the full catalogue on YouTube →</a></div>
+    </section>
+
+    <!-- ============ SPOTLIGHT ============ -->
+    <section class="spotlight" id="spotlight">
+      <div class="spot-bg" style="background-image:url('https://i.ytimg.com/vi/i1mF5AgQYGQ/maxresdefault.jpg')"></div>
+      <div class="wrap spot-inner">
+        <div class="spot-copy">
+          <p class="kicker">Spotlight · YouTube Film</p>
+          <h2>Putuler Biye <span class="bn">পুতুলের বিয়ে</span></h2>
+          <p>Our first feature-length YouTube film. Tanjin Tisha, Shahiduzzaman Selim and Mir Rabby lead an Eid story about family and promises, with two original songs written for it.</p>
+          <ul class="credits">
+            <li><span>Starring</span>Tanjin Tisha, Shahiduzzaman Selim, Mir Rabby</li>
+            <li><span>Director</span>Rafat Majumder Rinku</li>
+            <li><span>Music</span>“Parina Bojhate”, “Se Jane Na”</li>
+          </ul>
+          <div class="hero-cta">
+            <button class="btn btn-primary" data-play="i1mF5AgQYGQ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Watch the film</button>
+            <button class="btn btn-ghost" data-play="7M31MKWGglU">Trailer</button>
+          </div>
+        </div>
+        <button class="spot-poster" data-play="i1mF5AgQYGQ" aria-label="Play Putuler Biye">
+          <img src="https://i.ytimg.com/vi/i1mF5AgQYGQ/maxresdefault.jpg" alt="Putuler Biye still" loading="lazy">
+          <span class="play-ring"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ MUSIC ============ -->
+    <section class="section wrap" id="music">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Dhupchaya Music</p>
+          <h2>Songs that outlive <em>the story</em></h2>
+        </div>
+        <p class="section-sub">Every original gets a soundtrack. Some of them become bigger than the drama.</p>
+      </div>
+      <ol class="tracks" id="tracks"></ol>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about wrap" id="about">
+      <div class="about-mark">
+        <img src="assets/logo.png" alt="Dhupchaya logo" loading="lazy">
+      </div>
+      <div class="about-copy">
+        <p class="kicker">About Us</p>
+        <h2><span class="bn">ধূপছায়া</span> — light &amp; shade</h2>
+        <p class="lead">Dhupchaya is the play of sunlight and shadow. It's also how we think about stories: the warm moments and the dark ones, side by side.</p>
+        <p>Dhupchaya Entertainment produces and releases Bangla natoks, YouTube films, short films and original music. We work with the country's best-loved actors, Apurba, Tasnia Farin, Musfiq R Farhan, Tanjin Tisha and Arosh Khan among them, and with directors who know how to hold an audience for an hour on a phone screen.</p>
+        <p>Our mission is to be the most original, versatile media production house in Bangla entertainment, known for its storytelling and its creative concepts.</p>
+        <div class="faces" id="faces"></div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS ============ -->
+    <section class="section business wrap" id="business">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Partner With Us</p>
+          <h2>Bring your brand <em>into the story</em></h2>
+        </div>
+        <p class="section-sub">A natok release reaches millions of Bangla-speaking viewers in Bangladesh and abroad within days. Here's how brands, platforms and talent work with us.</p>
+      </div>
+      <div class="services">
+        <article class="service">
+          <span class="num">01</span>
+          <h3>Brand Integration</h3>
+          <p>Product placement written into the story, title sponsorship for Eid specials, and pre-roll mentions from the cast.</p>
+        </article>
+        <article class="service">
+          <span class="num">02</span>
+          <h3>Commissioned Production</h3>
+          <p>Natoks, web series, short films and TVCs made to your brief by our crew, from the script through to the final grade.</p>
+        </article>
+        <article class="service">
+          <span class="num">03</span>
+          <h3>Licensing &amp; Distribution</h3>
+          <p>Our library is available for OTT platforms, TV channels and international distribution partners.</p>
+        </article>
+        <article class="service">
+          <span class="num">04</span>
+          <h3>Music &amp; Talent</h3>
+          <p>Original soundtracks, music video production and collaborations with established and new artists.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact wrap" id="contact">
+      <div class="contact-copy">
+        <p class="kicker">Contact</p>
+        <h2>Let's make the next <em>Meghbalika</em> together.</h2>
+        <p>Business enquiries, brand partnerships, licensing and talent submissions.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:business@dhupchayaentertainment.com">business@dhupchayaentertainment.com</a></li>
+          <li><span>Phone</span><a href="tel:+61470608300">+61 470 608 300</a></li>
+          <li><span>Studio</span>Dhaka, Bangladesh</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.youtube.com/c/DhupchayaEntertainment" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+          <a href="https://www.facebook.com/DhupchayaEntertainmentHD/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/dhupchaya_entertainment/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+      <form class="form" id="contactForm">
+        <div class="row">
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Company<input name="company" autocomplete="organization"></label>
+        </div>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        <label>I'm interested in
+          <select name="topic">
+            <option>Brand integration / sponsorship</option>
+            <option>Commissioned production</option>
+            <option>Licensing &amp; distribution</option>
+            <option>Music &amp; talent</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png" alt="" width="36" height="38">
+        <span class="brand-text"><b>Dhupchaya</b><small>Entertainment</small></span>
+      </a>
+      <p class="bn footer-tag">গল্পে আলো, গল্পে ছায়া</p>
+      <p class="muted">© <span id="year"></span> Dhupchaya Entertainment. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ PLAYER MODAL ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="modal-close" id="modalClose" aria-label="Close player">×</button>
+    <div class="modal-frame" id="modalFrame"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
