@@ -151,7 +151,7 @@
     e.preventDefault();
     const f = new FormData(e.target);
     const body = `Name: ${f.get("name")}\nCompany: ${f.get("company")}\nEmail: ${f.get("email")}\n\n${f.get("message")}`;
-    location.href = `mailto:business@dhupchayaentertainment.com?subject=${encodeURIComponent("Enquiry: " + f.get("topic"))}&body=${encodeURIComponent(body)}`;
+    location.href = `mailto:dhupchayaentertainment@gmail.com?subject=${encodeURIComponent("Enquiry: " + f.get("topic"))}&body=${encodeURIComponent(body)}`;
     $("#formNote").textContent = "Opening your email app…";
   });
 

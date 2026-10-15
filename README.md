@@ -16,7 +16,7 @@ Then open http://localhost:5173
 - `assets/` — logo (original JPG and a transparent PNG) and the channel banner
 
 ## Contact form
-The form opens the visitor's email app, addressed to business@dhupchayaentertainment.com. To receive submissions directly, point it at Formspree or a backend in `js/main.js`.
+The form opens the visitor's email app, addressed to dhupchayaentertainment@gmail.com. To receive submissions directly, point it at Formspree or a backend in `js/main.js`.
 
 ## Deploy
 The folder can be deployed as is to GitHub Pages, Netlify, Vercel or Cloudflare Pages.
